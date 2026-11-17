@@ -8,3 +8,4 @@ node_modules/
 # Outils locaux
 .claude/
 .next-check/
+.vercel

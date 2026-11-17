@@ -8,7 +8,8 @@ type VideoSectionProps = {
   /** Vidéo résolue côté serveur (`null` tant qu'aucune URL n'est configurée). */
   video: ResolvedVideo | null;
   title: string;
-  label: string;
+  /** Étiquette en haut à gauche de l'aperçu (facultative). */
+  label?: string;
   pendingLabel: string;
   /** Affiche (photo ou emplacement réservé), rendue côté serveur. */
   poster: React.ReactNode;
@@ -44,9 +45,11 @@ export function VideoSection({ video, title, label, pendingLabel, poster }: Vide
           <>
             <div className="absolute inset-0 [&>*]:size-full">{poster}</div>
             <div aria-hidden className="absolute inset-0 bg-[linear-gradient(to_top,rgba(10,47,107,0.28),transparent_55%)]" />
-            <span className="absolute top-3 left-3 rounded-full border border-white/70 bg-white/85 px-3 py-1.5 text-[0.72rem] font-semibold text-brand-ink backdrop-blur sm:top-4 sm:left-4">
-              {label}
-            </span>
+            {label && (
+              <span className="absolute top-3 left-3 rounded-full border border-white/70 bg-white/85 px-3 py-1.5 text-[0.72rem] font-semibold text-brand-ink backdrop-blur sm:top-4 sm:left-4">
+                {label}
+              </span>
+            )}
 
             {video ? (
               <button

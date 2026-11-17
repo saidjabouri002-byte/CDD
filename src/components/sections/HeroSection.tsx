@@ -1,15 +1,12 @@
-import { CircleCheck, Globe2, Handshake, MapPin, UsersRound } from "lucide-react";
+import { CircleCheck, Handshake, MapPin, UsersRound } from "lucide-react";
 import { photos, video } from "@/config/assets";
 import { hero, introduction } from "@/content/site";
-import { keyFigures } from "@/content/network";
 import { Photo } from "@/components/ui/Photo";
 import { ButtonLink, Container, Eyebrow, Rays } from "@/components/ui/primitives";
 import { resolveVideo } from "@/lib/utils";
 import { VideoSection } from "./VideoSection";
 
 const cardIcons = [UsersRound, MapPin, Handshake];
-/** Chiffre officiel publié par le Club (voir content/network.ts). */
-const members = keyFigures[0].value;
 
 export function HeroSection() {
   return (
@@ -22,7 +19,7 @@ export function HeroSection() {
       <Rays className="absolute -top-16 -right-24 -z-10 size-[420px] text-white/60 sm:size-[560px]" />
 
       <Container>
-        <div className="grid items-center gap-10 lg:grid-cols-[1.08fr_1fr] lg:gap-12 xl:gap-16">
+        <div className="grid items-center gap-10 lg:grid-cols-[1fr_1.17fr] lg:items-start lg:gap-12 xl:gap-16">
           {/* Colonne gauche : message */}
           <div>
             <Eyebrow className="animate-rise">{hero.eyebrow}</Eyebrow>
@@ -51,38 +48,17 @@ export function HeroSection() {
           </div>
 
           {/* Colonne droite : vidéo de présentation */}
-          <div className="animate-rise relative [animation-delay:300ms]">
+          {/* Sur ordinateur : le haut de la vidéo s'aligne sur « Vous êtes entrepreneur à Tanger ? » */}
+          <div className="animate-rise relative [animation-delay:300ms] lg:mt-[53px]">
             {/* Halo lumineux derrière la vidéo */}
             <div aria-hidden className="absolute -inset-6 -z-10 rounded-[40px] bg-[radial-gradient(closest-side,rgba(10,123,240,0.28),transparent)] blur-2xl" />
             <div aria-hidden className="absolute -inset-2.5 -z-10 rounded-[30px] border border-white/80 bg-white/40 backdrop-blur sm:-inset-3" />
             <VideoSection
               video={resolveVideo(video.url)}
               title={video.title}
-              label={introduction.videoLabel}
               pendingLabel={introduction.videoPending}
-              poster={<Photo photo={photos.videoPoster} eager tint={false}sizes="(min-width: 1024px) 600px, 94vw" />}
+              poster={<Photo photo={photos.videoPoster} eager tint={false} sizes="(min-width: 1024px) 680px, 94vw" />}
             />
-
-            {/* Pastilles flottantes : ancrage local + réseau national (chiffre officiel) */}
-            <div className="animate-drift absolute -top-5 -right-2 hidden items-center gap-2.5 rounded-2xl border border-white bg-white/90 py-2 pr-4 pl-2 shadow-float backdrop-blur sm:flex lg:-right-5">
-              <span className="relative grid size-9 place-items-center rounded-xl bg-[linear-gradient(160deg,var(--brand),var(--brand-deep))] text-white">
-                <MapPin aria-hidden className="size-[1.1rem]" strokeWidth={2} />
-                <span aria-hidden className="absolute -top-0.5 -right-0.5 size-2.5 rounded-full border-2 border-white bg-success" />
-              </span>
-              <span className="leading-tight">
-                <span className="block text-[0.86rem] font-semibold text-ink">Tanger</span>
-                <span className="block text-[0.72rem] text-ink-muted">Maroc</span>
-              </span>
-            </div>
-            <div className="animate-drift absolute -bottom-7 -left-3 hidden items-center gap-3 rounded-2xl border border-white bg-white/90 py-2.5 pr-5 pl-2.5 shadow-float backdrop-blur [animation-delay:-3.5s] sm:flex lg:-left-8">
-              <span className="grid size-10 place-items-center rounded-xl bg-sky-100 text-brand-deep">
-                <Globe2 aria-hidden className="size-5" strokeWidth={1.9} />
-              </span>
-              <span className="leading-tight">
-                <span className="block text-[1.05rem] font-semibold tracking-[-0.02em] text-ink">+{members.toLocaleString("fr-FR")} membres</span>
-                <span className="block text-[0.74rem] text-ink-muted">dans le réseau CDD au Maroc</span>
-              </span>
-            </div>
           </div>
         </div>
 

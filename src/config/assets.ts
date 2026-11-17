@@ -42,7 +42,8 @@ export const photos = {
     ibenbrahim: photo("/images/cdd/bureau/lotfi-ibenbrahim.webp", "Portrait de Lotfi IBENBRAHIM, Trésorier"),
   },
   /** Affiche de la vidéo de présentation, dans le héro. */
-  videoPoster: photo("/images/cdd/video-poster.webp", "Membres du Club des Dirigeants réunis lors d'une rencontre", true, "center 40%"),
+  /** Image d'aperçu de la vidéo YouTube officielle (copie locale de sa miniature). */
+  videoPoster: photo("/images/cdd/video-presentation.webp", "Aperçu de la vidéo de présentation du Club des Dirigeants", true),
   /** Photo de la section « Découvrez le CDD Tanger ». */
   introduction: photo("/images/cdd/introduction.webp", "Échange convivial entre participants d'une rencontre du Club des Dirigeants", true, "center 30%"),
   activities: {
@@ -83,8 +84,8 @@ export const video = {
    * Accepte : lien YouTube (watch / youtu.be / shorts) ou fichier local, ex. "/videos/cdd-tanger.mp4".
    * Peut aussi être défini via la variable d'environnement NEXT_PUBLIC_VIDEO_URL.
    */
-  url: process.env.NEXT_PUBLIC_VIDEO_URL ?? "",
-  title: "Présentation du CDD Tanger",
+  url: process.env.NEXT_PUBLIC_VIDEO_URL || "https://www.youtube.com/watch?v=2HdTyX51Ons",
+  title: "Présentation du Club des Dirigeants — CDD Maroc",
 } as const;
 
 export const links = {
