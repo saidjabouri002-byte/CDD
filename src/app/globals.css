@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+/* ───────── Design tokens — palette dérivée du logo officiel CDD (bleu #0080F0 → #0050F0) ───────── */
+:root {
+  --brand: #0a7bf0;
+  --brand-strong: #0b6fe8;
+  --brand-deep: #0450d8;
+  --brand-ink: #0a2f6b;
+
+  --ink: #0b1730;
+  --ink-soft: #3f4b63;
+  --ink-muted: #5d6981;
+
+  --sky-50: #f5f9ff;
+  --sky-100: #eaf3ff;
+  --sky-200: #d6e8ff;
+  --sky-300: #b9d8ff;
+
+  --night: #061637;
+  --night-soft: #0b2a62;
+  --glow: #7cc4ff;
+
+  --line: #e1eaf5;
+  --line-strong: #cfdcec;
+
+  --error: #c62838;
+  --success: #0f7a4d;
+
+  --shadow-card: 0 1px 2px rgba(11, 23, 48, 0.04), 0 10px 30px -12px rgba(10, 60, 140, 0.12);
+  --shadow-float: 0 2px 6px rgba(11, 23, 48, 0.05), 0 24px 60px -18px rgba(10, 60, 140, 0.28);
+  --shadow-cta: 0 1px 0 rgba(255, 255, 255, 0.28) inset, 0 10px 24px -8px rgba(4, 80, 216, 0.55);
+}
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-ink: var(--brand-ink);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-muted: var(--ink-muted);
+  --color-sky-50: var(--sky-50);
+  --color-sky-100: var(--sky-100);
+  --color-sky-200: var(--sky-200);
+  --color-sky-300: var(--sky-300);
+  --color-night: var(--night);
+  --color-night-soft: var(--night-soft);
+  --color-glow: var(--glow);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-error: var(--error);
+  --color-success: var(--success);
+
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --shadow-card: var(--shadow-card);
+  --shadow-float: var(--shadow-float);
+  --shadow-cta: var(--shadow-cta);
+
+  --animate-rise: rise 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-drift: drift 7s ease-in-out infinite;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ───────── Base ───────── */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background: #ffffff;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+::selection {
+  background: var(--sky-200);
+  color: var(--brand-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand-deep);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Surlignage bleu doux (inspiré de la référence 2) */
+.mark-sky {
+  background-image: linear-gradient(to top, var(--sky-200) 0, var(--sky-200) 38%, transparent 38%);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding-inline: 0.08em;
+}
+
+/* Quadrillage fin (héro) */
+.line-grid {
+  background-image:
+    linear-gradient(rgba(10, 123, 240, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 123, 240, 0.07) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Quadrillage clair pour les sections bleu nuit */
+.line-grid-dark {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Grille de points discrète pour les fonds de section */
+.dot-grid {
+  background-image: radial-gradient(rgba(10, 123, 240, 0.16) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
