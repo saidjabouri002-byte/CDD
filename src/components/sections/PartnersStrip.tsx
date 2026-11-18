@@ -50,7 +50,7 @@ export function PartnersStrip() {
           <div>
             <p className="text-[0.7rem] font-semibold tracking-[0.16em] text-brand-deep uppercase">Écosystème</p>
             <h2 id="partenaires-strip-title" className="mt-2 text-[1.15rem] font-semibold tracking-[-0.015em] text-ink sm:text-[1.3rem]">
-              <Highlight text="Ils accompagnent le réseau Club des Dirigeants" />
+              <Highlight text="Ils Accompagnent le Réseau Club des Dirigeants" />
             </h2>
           </div>
           <Link

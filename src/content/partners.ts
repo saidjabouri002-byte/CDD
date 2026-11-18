@@ -17,10 +17,10 @@ export type Partner = {
 };
 
 export const partnerCategories: { key: PartnerCategory; title: string; text: string }[] = [
-  { key: "institutionnels", title: "Partenaires institutionnels", text: "Institutions et organismes qui accompagnent l'entrepreneuriat et le développement économique." },
-  { key: "academiques", title: "Partenaires académiques", text: "Écoles, universités et centres de formation de l'écosystème." },
-  { key: "professionnels", title: "Partenaires professionnels et écosystèmes", text: "Entreprises, médias et acteurs de l'écosystème qui soutiennent la dynamique du réseau." },
-  { key: "entreprises", title: "Partenaires entreprises", text: "Entreprises qui proposent des offres et avantages aux membres de la communauté." },
+  { key: "institutionnels", title: "Partenaires Institutionnels", text: "Institutions et organismes qui accompagnent l'entrepreneuriat et le développement économique." },
+  { key: "academiques", title: "Partenaires Académiques", text: "Écoles, universités et centres de formation de l'écosystème." },
+  { key: "professionnels", title: "Partenaires Professionnels et Écosystèmes", text: "Entreprises, médias et acteurs de l'écosystème qui soutiennent la dynamique du réseau." },
+  { key: "entreprises", title: "Partenaires Entreprises", text: "Entreprises qui proposent des offres et avantages aux membres de la communauté." },
 ];
 
 export const partners: Partner[] = [

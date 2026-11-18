@@ -50,15 +50,15 @@ export const ambassadors = [
 
 export const network = {
   eyebrow: "ANCRÉ À TANGER · CONNECTÉ AU MONDE",
-  headline: ["Votre Cercle est à Tanger.", "Votre réseau va bien plus loin."],
+  headline: ["Votre Cercle est à Tanger.", "Votre Réseau va Bien plus Loin."],
   intro:
     "En rejoignant le CDD Tanger, vous rencontrez les dirigeants de votre ville — et vous intégrez un réseau présent dans les régions du Royaume et ouvert sur l'international.",
   mapTitle: "Les villes des Cercles d'Affaires CDD",
   mapCaption: "Villes recensées dans l'annuaire officiel des Cercles d'Affaires.",
-  nationalTitle: "Un réseau national",
+  nationalTitle: "Un Réseau National",
   nationalText:
     "De Tanger à Lagouira, le Club des Dirigeants s'appuie sur 12 présidences régionales actives pour mobiliser les décideurs économiques au plus près de chaque territoire.",
-  internationalTitle: "Ouvert sur l'international",
+  internationalTitle: "Ouvert sur l'International",
   internationalText:
     "Des représentations en Europe, en Amérique du Nord et en Afrique, et des ambassadeurs du CDD qui créent des passerelles économiques avec le Maroc.",
   ambassadorsLabel: "Ambassadeurs du CDD",
@@ -69,7 +69,7 @@ export const network = {
 export const tangerNews = {
   label: "Nouveau à Tanger",
   date: "Annonce du 14 octobre 2026",
-  title: "Deux nouveaux Cercles d'Affaires en préparation à Tanger",
+  title: "Deux Nouveaux Cercles d'Affaires en Préparation à Tanger",
   text: "Le Club des Dirigeants poursuit son développement territorial à Tanger avec la préparation de deux nouveaux Cercles d'Affaires.",
   circles: ["CDD TANGER CENTRE", "CDD TANGER TECHNOPARK"],
   link: "Lire l'annonce officielle",

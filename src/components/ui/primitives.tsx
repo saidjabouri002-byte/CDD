@@ -48,7 +48,7 @@ export function headingClass(title: string | readonly string[]) {
     "leading-[1.16] font-semibold tracking-[-0.028em] text-ink",
     length > 100
       ? // Titres très longs : taille proportionnelle à l'écran sur téléphone pour rester sur 3 lignes.
-        "text-[clamp(0.97rem,4.85vw,1.4rem)] tracking-[-0.032em] max-[359px]:text-[0.94rem] sm:text-[1.9rem] sm:tracking-[-0.028em] lg:text-[2.3rem]"
+        "text-[clamp(0.95rem,4.55vw,1.4rem)] tracking-[-0.032em] max-[359px]:text-[0.9rem] sm:text-[1.9rem] sm:tracking-[-0.028em] lg:text-[2.3rem]"
       : length > 75
         ? "text-[1.12rem] min-[360px]:text-[1.28rem] min-[400px]:text-[1.42rem] sm:text-[1.9rem] lg:text-[2.3rem]"
         : length > 52
@@ -59,9 +59,12 @@ export function headingClass(title: string | readonly string[]) {
 
 /** Met le mot-clé d'un titre en dégradé bleu (voir content/highlights.ts). */
 export function Highlight({ text, tone = "light" }: { text: string; tone?: Tone }) {
-  const keyword = titleKeywords[text];
-  const index = keyword ? text.indexOf(keyword) : -1;
-  if (index < 0) return <>{text}</>;
+  // Recherche insensible aux majuscules : les titres peuvent changer de casse sans casser la mise en valeur.
+  const lower = text.toLowerCase();
+  const entry = Object.entries(titleKeywords).find(([title]) => title.toLowerCase() === lower);
+  const index = entry ? lower.indexOf(entry[1].toLowerCase()) : -1;
+  if (!entry || index < 0) return <>{text}</>;
+  const keyword = text.slice(index, index + entry[1].length);
   return (
     <>
       {text.slice(0, index)}
@@ -132,7 +135,7 @@ type ButtonLinkProps = {
 };
 
 const buttonBase =
-  "group inline-flex items-center justify-center gap-2 rounded-full text-center font-semibold tracking-[-0.005em] transition-[transform,box-shadow,background-color,border-color,color] duration-300 active:scale-[0.98]";
+  "group inline-flex items-center justify-center gap-2 rounded-xl text-center font-semibold tracking-[-0.005em] transition-[transform,box-shadow,background-color,border-color,color] duration-300 active:scale-[0.98]";
 const buttonVariants = {
   primary:
     "bg-[linear-gradient(180deg,var(--brand-strong),var(--brand-deep))] text-white shadow-cta hover:-translate-y-0.5 hover:shadow-[0_1px_0_rgba(255,255,255,0.28)_inset,0_16px_32px_-10px_rgba(4,80,216,0.65)]",

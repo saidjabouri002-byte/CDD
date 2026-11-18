@@ -61,7 +61,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           </div>
           {/* Même appel à l'action bleu sur toutes les pages, juste avant le pied de page */}
           <PageCTA
-            title="Développez votre réseau à Tanger."
+            title="Développez Votre Réseau à Tanger."
             text="Complétez le formulaire pour être recontacté par notre équipe."
             label="Je souhaite rejoindre le réseau"
           />

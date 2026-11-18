@@ -114,7 +114,7 @@ export function BenefitsGrid() {
                 </div>
                 <Link
                   href="/#reseau"
-                  className="inline-flex min-h-11 shrink-0 items-center gap-2 self-start rounded-full bg-white px-5 text-[0.92rem] font-semibold text-brand-deep shadow-float transition-transform duration-300 hover:-translate-y-0.5 sm:self-center"
+                  className="inline-flex min-h-11 shrink-0 items-center gap-2 self-start rounded-xl bg-white px-5 text-[0.92rem] font-semibold text-brand-deep shadow-float transition-transform duration-300 hover:-translate-y-0.5 sm:self-center"
                 >
                   Voir le réseau
                   <ArrowRight aria-hidden className="size-4" />

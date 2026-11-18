@@ -13,52 +13,52 @@ export const nav = {
     { label: "Partenaires", href: "/partenaires" },
     { label: "FAQ", href: "/faq" },
   ],
-  cta: { label: "Découvrir le CDD Tanger", href: "/#contact" },
+  cta: { label: "Rejoindre CDD Tanger", href: "/#contact" },
 } as const;
 
 export const hero = {
   eyebrow: "CLUB DES DIRIGEANTS · TANGER",
-  headlineLead: "Vous êtes entrepreneur à Tanger ?",
-  headlineEmphasis: "Ne développez plus votre entreprise seul.",
+  headlineLead: "Vous Êtes Entrepreneur à Tanger ?",
+  headlineEmphasis: "Ne Développez plus Votre Entreprise Seul.",
   subheadline:
     "Rejoignez un réseau de dirigeants et d'entrepreneurs qui partagent vos ambitions, développent des relations de confiance et créent ensemble de nouvelles opportunités d'affaires.",
   microcopy: "Développez votre réseau. Faites connaître votre entreprise. Créez de nouvelles opportunités.",
-  primaryCta: { label: "Découvrir le CDD Tanger", href: "/#contact" },
+  primaryCta: { label: "Rejoindre CDD Tanger", href: "/#contact" },
   secondaryCta: { label: "Voir nos activités", href: "/#activites" },
   floatingCards: [
-    "Des rencontres entre entrepreneurs",
-    "Un réseau d'affaires à Tanger",
-    "Des connexions qui créent des opportunités",
+    "Des Rencontres entre Entrepreneurs",
+    "Un Réseau d'Affaires à Tanger",
+    "Des Connexions qui Créent des Opportunités",
   ],
 } as const;
 
 export const trust = {
   label: "RÉSEAU D'AFFAIRES · TANGER · MAROC",
-  main: "Un réseau d'affaires au service des entrepreneurs et dirigeants.",
+  main: "Un Réseau d'Affaires au Service des Entrepreneurs et Dirigeants.",
   supporting:
     "CDD Tanger s'inscrit dans la dynamique du Club des Dirigeants, un réseau qui favorise les échanges, les recommandations et les opportunités entre professionnels.",
 } as const;
 
 export const problem = {
   eyebrow: "LE CONSTAT",
-  headline: ["Votre entreprise a du potentiel.", "Mais votre réseau est-il à la hauteur de vos ambitions ?"],
+  headline: ["Votre Entreprise a du Potentiel.", "Mais Votre Réseau est-il à la Hauteur de Vos Ambitions ?"],
   intro:
     "Vous travaillez chaque jour pour développer votre activité. Pourtant, certaines opportunités restent difficiles à saisir lorsqu'on avance seul.",
   cards: [
     {
-      title: "Vous manquez de contacts professionnels ?",
+      title: "Vous Manquez de Contacts Professionnels ?",
       text: "Vous aimeriez rencontrer davantage de dirigeants, de décideurs et d'entrepreneurs dans votre région.",
     },
     {
-      title: "Vous cherchez à développer votre activité ?",
+      title: "Vous Cherchez à Développer Votre Activité ?",
       text: "Vous souhaitez faire connaître votre entreprise et créer de nouvelles opportunités commerciales.",
     },
     {
-      title: "Vous avez besoin de partenaires fiables ?",
+      title: "Vous Avez Besoin de Partenaires Fiables ?",
       text: "Vous savez que les bonnes collaborations peuvent accélérer le développement de votre entreprise.",
     },
     {
-      title: "Vous souhaitez rejoindre une communauté d'entrepreneurs ?",
+      title: "Vous Souhaitez Rejoindre une Communauté d'Entrepreneurs ?",
       text: "Vous aimeriez partager vos expériences, échanger des idées et vous entourer de personnes qui comprennent vos défis.",
     },
   ],
@@ -68,7 +68,7 @@ export const problem = {
 
 export const introduction = {
   eyebrow: "DÉCOUVREZ LE CDD TANGER",
-  headline: "Les bonnes relations font les grandes opportunités.",
+  headline: "Les Bonnes Relations font les Grandes Opportunités.",
   paragraphs: [
     "Bienvenue au Club des Dirigeants de Tanger.",
     "Un réseau d'affaires qui rassemble des entrepreneurs, chefs d'entreprise et décideurs autour d'une ambition commune : grandir ensemble.",
@@ -82,36 +82,36 @@ export const introduction = {
 
 export const benefits = {
   eyebrow: "POURQUOI NOUS REJOINDRE ?",
-  headline: "Ce que le CDD Tanger peut apporter à votre entreprise.",
+  headline: "Ce que le CDD Tanger peut Apporter à Votre Entreprise.",
   cards: [
     {
       icon: "network",
-      title: "Développez votre réseau",
+      title: "Développez Votre Réseau",
       text: "Rencontrez des dirigeants, entrepreneurs et professionnels de différents secteurs d'activité.",
     },
     {
       icon: "megaphone",
-      title: "Faites connaître votre entreprise",
+      title: "Faites Connaître Votre Entreprise",
       text: "Présentez votre activité, partagez votre expertise et gagnez en visibilité auprès d'autres professionnels.",
     },
     {
       icon: "handshake",
-      title: "Créez des opportunités d'affaires",
+      title: "Créez des Opportunités d'Affaires",
       text: "Développez des mises en relation, des recommandations et des possibilités de partenariat.",
     },
     {
       icon: "rocket",
-      title: "Entourez-vous d'entrepreneurs ambitieux",
+      title: "Entourez-vous d'Entrepreneurs Ambitieux",
       text: "Échangez avec des personnes qui partagent votre envie d'entreprendre, d'innover et de progresser.",
     },
     {
       icon: "lightbulb",
-      title: "Apprenez et partagez vos expériences",
+      title: "Apprenez et Partagez Vos Expériences",
       text: "Découvrez de nouvelles perspectives grâce aux échanges, conférences et rencontres du réseau.",
     },
     {
       icon: "compass",
-      title: "Élargissez vos horizons",
+      title: "Élargissez Vos Horizons",
       text: "Bénéficiez de la dynamique d'un club implanté dans plusieurs régions du Maroc.",
     },
   ],
@@ -119,21 +119,21 @@ export const benefits = {
 
 export const howItWorks = {
   eyebrow: "COMMENT ÇA MARCHE ?",
-  headline: "Développer votre réseau n'a pas besoin d'être compliqué.",
+  headline: "Développer Votre Réseau n'a pas Besoin d'Être Compliqué.",
   steps: [
     {
       number: "01",
-      title: "Faites connaissance avec le CDD Tanger",
+      title: "Faites Connaissance avec le CDD Tanger",
       text: "Présentez votre entreprise et découvrez comment fonctionne notre réseau d'affaires.",
     },
     {
       number: "02",
-      title: "Rencontrez d'autres entrepreneurs",
+      title: "Rencontrez d'Autres Entrepreneurs",
       text: "Découvrez nos Cercles d'Affaires et les possibilités de participation aux prochaines rencontres.",
     },
     {
       number: "03",
-      title: "Créez des relations durables",
+      title: "Créez des Relations Durables",
       text: "Échangez, partagez vos expertises et développez des possibilités de collaboration avec les autres professionnels du réseau.",
     },
   ],
@@ -142,7 +142,7 @@ export const howItWorks = {
 
 export const activities = {
   eyebrow: "NOS ACTIVITÉS",
-  headline: ["Des rencontres qui créent des connexions.", "Des connexions qui ouvrent des opportunités."],
+  headline: ["Des Rencontres qui Créent des Connexions.", "Des Connexions qui Ouvrent des Opportunités."],
   items: [
     {
       key: "cercles",
@@ -151,17 +151,17 @@ export const activities = {
     },
     {
       key: "networking",
-      title: "Les rencontres de networking",
+      title: "Les Rencontres de Networking",
       text: "Des occasions de développer votre réseau professionnel et d'échanger avec de nouveaux contacts dans un environnement convivial.",
     },
     {
       key: "talks",
-      title: "Les conférences et Business Talks",
+      title: "Les Conférences et Business Talks",
       text: "Des moments d'échange et de partage autour de l'entrepreneuriat, du leadership, de l'innovation et du développement des entreprises.",
     },
     {
       key: "b2b",
-      title: "Les rencontres professionnelles B2B",
+      title: "Les Rencontres Professionnelles B2B",
       text: "Des possibilités d'échange entre entreprises pour identifier des synergies, des complémentarités et des collaborations.",
     },
   ],
@@ -196,17 +196,17 @@ export const circles = {
 
 export const community = {
   eyebrow: "LA COMMUNAUTÉ CDD TANGER",
-  headline: ["Derrière chaque entreprise, il y a des personnes.", "Et derrière chaque opportunité, il y a souvent une rencontre."],
+  headline: ["Derrière Chaque Entreprise, il y a des Personnes.", "Et Derrière Chaque Opportunité, il y a Souvent une Rencontre."],
   paragraphs: [
     "CDD Tanger, c'est avant tout une communauté humaine.",
     "Des dirigeants qui échangent leurs expériences, des entrepreneurs qui partagent leurs ambitions et des professionnels qui construisent des relations au-delà de leurs activités respectives.",
   ],
-  highlight: "Ensemble, allons plus loin.",
+  highlight: "Ensemble, Allons plus Loin.",
 } as const;
 
 export const contact = {
   eyebrow: "CONTACT",
-  headline: "Et si votre prochaine opportunité d'affaires commençait ici ?",
+  headline: "Et si Votre Prochaine Opportunité d'Affaires Commençait Ici ?",
   paragraphs: [
     "Vous êtes entrepreneur, chef d'entreprise ou dirigeant à Tanger ?",
     "Faites connaissance avec le CDD Tanger et découvrez comment développer votre réseau au sein de notre communauté.",
@@ -275,7 +275,7 @@ export const contact = {
 
 export const faq = {
   eyebrow: "FAQ",
-  headline: ["Vous avez des questions ?", "Nous avons les réponses."],
+  headline: ["Vous Avez des Questions ?", "Nous Avons les Réponses."],
   items: [
     {
       question: "À qui s'adresse le CDD Tanger ?",
@@ -306,7 +306,7 @@ export const faq = {
 } as const;
 
 export const finalCta = {
-  headline: "Les bonnes opportunités commencent par les bonnes rencontres.",
+  headline: "Les Bonnes Opportunités Commencent par les Bonnes Rencontres.",
   paragraphs: [
     "Ne limitez pas le développement de votre entreprise à votre réseau actuel.",
     "Faites connaissance avec des entrepreneurs et dirigeants de Tanger qui partagent vos ambitions.",

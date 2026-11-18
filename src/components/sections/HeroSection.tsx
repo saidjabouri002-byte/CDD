@@ -33,7 +33,7 @@ export function HeroSection() {
             <Eyebrow className="animate-rise self-start">{hero.eyebrow}</Eyebrow>
             <h1 id="hero-title" className="animate-rise mt-6 font-semibold tracking-[-0.035em] [animation-delay:80ms]">
               <span className="block text-[1.02rem] leading-[1.2] text-ink min-[360px]:text-[1.2rem] min-[400px]:text-[1.4rem] sm:text-[1.9rem] lg:text-[1.55rem] xl:text-[2rem]">{hero.headlineLead}</span>
-              <span className="mt-2 block bg-[linear-gradient(95deg,var(--brand-deep),var(--brand)_55%,#35a4ff)] bg-clip-text pb-1 text-[1.65rem] leading-[1.06] text-transparent min-[360px]:text-[1.95rem] min-[400px]:text-[2.25rem] sm:text-[3.3rem] lg:text-[2.45rem] xl:text-[3.2rem]">
+              <span className="mt-2 block bg-[linear-gradient(95deg,var(--brand-deep),var(--brand)_55%,#35a4ff)] bg-clip-text pb-1 text-[1.65rem] leading-[1.06] text-transparent min-[360px]:text-[1.95rem] min-[400px]:text-[2.25rem] sm:text-[3.3rem] lg:text-[2.45rem] xl:text-[3rem]">
                 {hero.headlineEmphasis}
               </span>
             </h1>

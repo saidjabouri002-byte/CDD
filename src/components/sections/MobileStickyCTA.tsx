@@ -48,7 +48,7 @@ export function MobileStickyCTA() {
         visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-6 opacity-0",
       )}
     >
-      <div className="rounded-full border border-white/80 bg-white/80 p-1.5 shadow-float backdrop-blur-xl">
+      <div className="rounded-2xl border border-white/80 bg-white/80 p-1.5 shadow-float backdrop-blur-xl">
         <ButtonLink href={hero.primaryCta.href} size="md" className="w-full">
           {hero.primaryCta.label}
         </ButtonLink>

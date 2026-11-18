@@ -14,13 +14,13 @@ export const pageIntros = {
   },
   benefits: {
     eyebrow: "AVANTAGES",
-    title: "Ce que le CDD Tanger apporte à votre entreprise.",
+    title: "Ce que le CDD Tanger Apporte à Votre Entreprise.",
     intro:
       "Un réseau, de la visibilité, des recommandations et des relations de confiance avec des dirigeants qui partagent vos ambitions.",
   },
   activities: {
     eyebrow: "ACTIVITÉS",
-    title: "Des rencontres qui créent des opportunités.",
+    title: "Des Rencontres qui Créent des Opportunités.",
     intro:
       "Cercles d'Affaires, soirées networking, conférences et rencontres B2B : découvrez comment les dirigeants de Tanger se rencontrent et travaillent ensemble.",
   },
@@ -32,19 +32,19 @@ export const pageIntros = {
   },
   community: {
     eyebrow: "COMMUNAUTÉ",
-    title: "Une communauté humaine avant tout.",
+    title: "Une Communauté Humaine Avant Tout.",
     intro:
       "Des dirigeants qui échangent leurs expériences, des entrepreneurs qui partagent leurs ambitions et des professionnels qui construisent des relations durables.",
   },
   partners: {
     eyebrow: "PARTENAIRES",
-    title: "Les partenaires du réseau Club des Dirigeants.",
+    title: "Les Partenaires du Réseau Club des Dirigeants.",
     intro:
       "Le Club des Dirigeants développe des partenariats avec des institutions, organisations professionnelles, entreprises, établissements d'enseignement et acteurs de l'écosystème, afin de créer des synergies et d'apporter de nouveaux avantages à ses membres.",
   },
   faq: {
     eyebrow: "FAQ",
-    title: "Vos questions sur le CDD Tanger.",
+    title: "Vos Questions sur le CDD Tanger.",
     intro: "Tout ce qu'il faut savoir avant de faire connaissance avec le Club des Dirigeants à Tanger.",
   },
 } satisfies Record<string, PageIntro>;
@@ -52,19 +52,19 @@ export const pageIntros = {
 /** Le Club — identité du réseau (source : clubdesdirigeants.ma). */
 export const clubIdentity = {
   eyebrow: "LE CDD EN BREF",
-  headline: "Un réseau d'excellence au service des décideurs.",
+  headline: "Un Réseau d'Excellence au Service des Décideurs.",
   text: "Le Club des Dirigeants — CDD Maroc est une association marocaine à but non lucratif qui fédère des dirigeants, entrepreneurs et décideurs depuis 2018. Sa mission : favoriser le partage d'expertise, le développement des affaires, l'entrepreneuriat, l'innovation, l'inclusion économique et les transformations digitale et durable.",
   pillars: [
     {
-      title: "Notre vision",
+      title: "Notre Vision",
       text: "Être le hub d'affaires, d'influence et de création de valeur le plus responsable et engagé dans le bien-être collectif.",
     },
     {
-      title: "Notre mission",
+      title: "Notre Mission",
       text: "Connecter les dirigeants ; développer l'entrepreneuriat, le leadership et le partage d'expertise ; accompagner les transformations digitale, responsable et durable.",
     },
     {
-      title: "Nos valeurs",
+      title: "Nos Valeurs",
       text: "Engagement, Équité et Solidarité : les valeurs qui façonnent l'identité du Club et son action collective.",
     },
   ],
@@ -91,7 +91,7 @@ export const values = {
 
 export const leadership = {
   eyebrow: "GOUVERNANCE NATIONALE",
-  headline: "Le bureau exécutif du Club des Dirigeants Tanger.",
+  headline: "Le Bureau Exécutif du Club des Dirigeants Tanger.",
   members: [
     { key: "drif", name: "Driss DRIF", role: "Président-Fondateur" },
     { key: "khalifi", name: "Adil KHALIFI", role: "Vice-Président" },
@@ -104,7 +104,7 @@ export const leadership = {
 /** Avantages d'un Cercle (source : page Cercles d'affaires du site officiel). */
 export const circleAdvantages = {
   eyebrow: "POURQUOI REJOINDRE UN CERCLE ?",
-  headline: "Parce que votre réseau doit travailler avec vous.",
+  headline: "Parce que Votre Réseau doit Travailler avec Vous.",
   items: [
     "Développer votre visibilité",
     "Trouver des partenaires",
@@ -117,7 +117,7 @@ export const circleAdvantages = {
 } as const;
 
 export const partnerPerks = {
-  title: "Des avantages partenaires pour les membres",
+  title: "Des Avantages Partenaires pour les Membres",
   text: "Les membres du Club des Dirigeants bénéficient d'offres et d'avantages proposés par les partenaires de la communauté.",
   cta: "Voir les partenaires",
 } as const;
@@ -125,30 +125,30 @@ export const partnerPerks = {
 /** Méthode d'un Cercle (source : page Cercles d'affaires du site officiel). */
 export const circleMethod = {
   eyebrow: "LA MÉTHODE",
-  headline: "Une méthode simple, une vraie dynamique.",
+  headline: "Une Méthode Simple, une Vraie Dynamique.",
   steps: [
-    { title: "Je rencontre", text: "Des dirigeants et entrepreneurs de différents secteurs." },
-    { title: "Je me présente", text: "Je partage mon activité, mon expertise et mes besoins." },
-    { title: "Je découvre", text: "Les activités et expertises des autres membres." },
-    { title: "Je recommande", text: "Je deviens ambassadeur des membres de mon cercle." },
-    { title: "Je connecte", text: "Je facilite les mises en relation pertinentes." },
-    { title: "Je développe", text: "Des collaborations et opportunités business." },
+    { title: "Je Rencontre", text: "Des dirigeants et entrepreneurs de différents secteurs." },
+    { title: "Je me Présente", text: "Je partage mon activité, mon expertise et mes besoins." },
+    { title: "Je Découvre", text: "Les activités et expertises des autres membres." },
+    { title: "Je Recommande", text: "Je deviens ambassadeur des membres de mon cercle." },
+    { title: "Je Connecte", text: "Je facilite les mises en relation pertinentes." },
+    { title: "Je Développe", text: "Des collaborations et opportunités business." },
   ],
 } as const;
 
 /** Déroulement type (source : page Cercles d'affaires du site officiel — programme indicatif du réseau). */
 export const meetingFlow = {
   eyebrow: "DÉROULEMENT TYPE",
-  headline: "Une rencontre de Cercle, étape par étape.",
+  headline: "Une Rencontre de Cercle, Étape par Étape.",
   note: "Programme indicatif du réseau CDD. Les horaires des rencontres à Tanger sont communiqués par l'équipe.",
   steps: [
     { time: "18h00", title: "Accueil", text: "Accueil, émargement et premier contact." },
     { time: "18h15", title: "Networking", text: "Échanges libres autour d'un café de bienvenue." },
-    { time: "18h35", title: "Présentation des membres", text: "Pitch éclair de chaque participant et actualités." },
-    { time: "19h00", title: "Activité business", text: "Atelier collaboratif, étude de cas ou co-développement." },
+    { time: "18h35", title: "Présentation des Membres", text: "Pitch éclair de chaque participant et actualités." },
+    { time: "19h00", title: "Activité Business", text: "Atelier collaboratif, étude de cas ou co-développement." },
     { time: "19h30", title: "Business Talk", text: "Intervention d'un expert ou partage d'expérience." },
     { time: "20h00", title: "One-to-One", text: "Rendez-vous ciblés entre membres." },
-    { time: "20h30", title: "Opportunités & recommandations", text: "Partage de leads qualifiés, recommandations et clôture." },
+    { time: "20h30", title: "Opportunités & Recommandations", text: "Partage de leads qualifiés, recommandations et clôture." },
   ],
 } as const;
 
