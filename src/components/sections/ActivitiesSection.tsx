@@ -1,4 +1,3 @@
-import { Info } from "lucide-react";
 import { photos } from "@/config/assets";
 import { activities } from "@/content/site";
 import { Photo } from "@/components/ui/Photo";
@@ -8,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 export function ActivitiesSection() {
   return (
-    <section id="activites" aria-labelledby="activites-title" className="py-20 sm:py-28">
+    <section id="activites" aria-labelledby="activites-title" className="pt-20 pb-6 sm:pt-28 sm:pb-8">
       <Container>
         <Reveal>
           <SectionHeading id="activites-title" eyebrow={activities.eyebrow} title={activities.headline} />
@@ -48,13 +47,6 @@ export function ActivitiesSection() {
             );
           })}
         </div>
-
-        <Reveal>
-          <p className="mx-auto mt-14 flex max-w-[640px] items-start gap-2.5 rounded-2xl border border-line bg-sky-50 px-4 py-3.5 text-[0.88rem] leading-[1.55] text-ink-muted sm:mt-20">
-            <Info aria-hidden className="mt-[0.2em] size-[1.05em] shrink-0 text-brand-deep" />
-            {activities.disclaimer}
-          </p>
-        </Reveal>
       </Container>
     </section>
   );

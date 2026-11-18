@@ -318,6 +318,8 @@ export const finalCta = {
 export const footer = {
   name: "Club des Dirigeants — Tanger",
   tagline: "Réseau d'affaires · Tanger · Maroc",
+  about:
+    "Le Club des Dirigeants – CDD est une association marocaine à but non lucratif qui fédère des dirigeants et entrepreneurs au Maroc et à l'international.",
   navTitle: "Navigation",
   linksTitle: "Liens utiles",
   officialSite: "Site officiel du Club des Dirigeants",

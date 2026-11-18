@@ -92,6 +92,12 @@ export const links = {
   officialSite: "https://www.cdd.ma/",
   privacyPolicy: "https://cddnetwork.ma/crm/politique_de_confidentialite.php",
   circlesDirectory: "https://cddnetwork.ma/crm/public_liste_cercles.php",
+  /** Réseaux sociaux officiels du Club des Dirigeants. */
+  social: {
+    facebook: "https://www.facebook.com/ClubdesDirigeants/",
+    instagram: "https://www.instagram.com/clubdesdirigeants/",
+    linkedin: "https://www.linkedin.com/company/club-des-dirigeants/",
+  },
 } as const;
 
 export const site = {
