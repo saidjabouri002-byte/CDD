@@ -1,4 +1,5 @@
-import { CircleCheck, Handshake, MapPin, UsersRound } from "lucide-react";
+import Image from "next/image";
+import { CircleCheck } from "lucide-react";
 import { photos, video } from "@/config/assets";
 import { hero, introduction } from "@/content/site";
 import { Photo } from "@/components/ui/Photo";
@@ -6,7 +7,12 @@ import { ButtonLink, Container, Eyebrow, Rays } from "@/components/ui/primitives
 import { resolveVideo } from "@/lib/utils";
 import { VideoSection } from "./VideoSection";
 
-const cardIcons = [UsersRound, MapPin, Handshake];
+/** Icônes 3D de la barre sous le héro (même ordre que hero.floatingCards). */
+const cardIcons = [
+  "/images/cdd/icons/cdd-tanger-rencontres-entrepreneurs.webp",
+  "/images/cdd/icons/cdd-tanger-reseau-affaires-tanger.webp",
+  "/images/cdd/icons/cdd-tanger-connexions-opportunites.webp",
+];
 
 export function HeroSection() {
   return (
@@ -66,14 +72,16 @@ export function HeroSection() {
 
         <ul className="animate-rise mt-12 grid overflow-hidden rounded-[22px] border border-white bg-white/70 shadow-card backdrop-blur-md [animation-delay:400ms] sm:mt-16 sm:grid-cols-3">
           {hero.floatingCards.map((text, i) => {
-            const Icon = cardIcons[i];
+            const icon = cardIcons[i];
             return (
               <li
                 key={text}
-                className="flex items-center gap-3 border-line p-3.5 not-last:border-b sm:p-4 sm:not-last:border-r sm:not-last:border-b-0 lg:px-6"
+                className="group flex items-center gap-4 border-line p-3.5 transition-colors duration-300 not-last:border-b hover:bg-white/60 sm:p-4 sm:not-last:border-r sm:not-last:border-b-0 lg:px-6"
               >
-                <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-[linear-gradient(160deg,var(--sky-100),var(--sky-200))] text-brand-deep">
-                  <Icon aria-hidden className="size-5" strokeWidth={1.9} />
+                {/* Cadre carré à coins arrondis : contour bleu clair, fond dégradé et léger reflet */}
+                <span className="relative grid size-14 shrink-0 place-items-center overflow-hidden rounded-2xl border-[1.5px] border-sky-300 bg-[linear-gradient(160deg,#ffffff_0%,var(--sky-50)_55%,var(--sky-100)_100%)] shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_8px_18px_-10px_rgba(4,80,216,0.45)] ring-4 ring-white/70 transition-[transform,border-color,box-shadow] duration-300 group-hover:-translate-y-0.5 group-hover:border-brand/60 group-hover:shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_12px_24px_-10px_rgba(4,80,216,0.55)] sm:size-16">
+                  <span aria-hidden className="absolute inset-x-1.5 top-1 h-1/3 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.85),transparent)]" />
+                  <Image src={icon} alt="" width={192} height={192} sizes="56px" className="relative size-11 object-contain drop-shadow-[0_4px_6px_rgba(4,80,216,0.18)] sm:size-12" />
                 </span>
                 <span className="text-[0.92rem] leading-snug font-semibold text-ink">{text}</span>
               </li>

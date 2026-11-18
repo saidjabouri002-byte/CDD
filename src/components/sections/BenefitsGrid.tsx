@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Compass, Handshake, Lightbulb, Megaphone, Network, Rocket, type LucideIcon } from "lucide-react";
 import { photos } from "@/config/assets";
@@ -14,6 +15,14 @@ const icons: Record<(typeof benefits.cards)[number]["icon"], LucideIcon> = {
   rocket: Rocket,
   lightbulb: Lightbulb,
   compass: Compass,
+};
+
+/** Icônes 3D des cartes « Pourquoi nous rejoindre ? » (noms de fichiers descriptifs pour le référencement). */
+const iconImages: Partial<Record<(typeof benefits.cards)[number]["icon"], string>> = {
+  megaphone: "/images/cdd/icons/cdd-tanger-visibilite-entreprise.webp",
+  handshake: "/images/cdd/icons/cdd-tanger-opportunites-affaires.webp",
+  rocket: "/images/cdd/icons/cdd-tanger-entrepreneurs-ambitieux.webp",
+  lightbulb: "/images/cdd/icons/cdd-tanger-partage-experiences.webp",
 };
 
 /**
@@ -58,8 +67,21 @@ export function BenefitsGrid() {
                   <article className="group relative h-full overflow-hidden rounded-[24px] border border-line bg-white p-6 shadow-card transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-sky-300 hover:shadow-float sm:p-7">
                     <div aria-hidden className="absolute -top-16 -right-16 size-40 rounded-full bg-[radial-gradient(closest-side,var(--sky-200),transparent)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                     <div className="relative flex items-center justify-between">
-                      <span className="grid size-12 place-items-center rounded-2xl bg-[linear-gradient(160deg,var(--brand),var(--brand-deep))] text-white shadow-[0_8px_18px_-8px_rgba(4,80,216,0.7)] transition-transform duration-300 group-hover:-rotate-6">
-                        <Icon aria-hidden className="size-[1.4rem]" strokeWidth={1.8} />
+                      {/* Icône 3D dans un cadre carré arrondi (même style que la barre du héro) */}
+                      <span className="relative grid size-16 place-items-center overflow-hidden rounded-2xl border-[1.5px] border-sky-300 bg-[linear-gradient(160deg,#ffffff_0%,var(--sky-50)_55%,var(--sky-100)_100%)] shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_8px_18px_-10px_rgba(4,80,216,0.45)] ring-4 ring-sky-50 transition-[transform,border-color] duration-300 group-hover:-translate-y-0.5 group-hover:-rotate-3 group-hover:border-brand/60">
+                        <span aria-hidden className="absolute inset-x-1.5 top-1 h-1/3 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.85),transparent)]" />
+                        {iconImages[card.icon] ? (
+                          <Image
+                            src={iconImages[card.icon]!}
+                            alt=""
+                            width={192}
+                            height={192}
+                            sizes="48px"
+                            className="relative size-12 object-contain drop-shadow-[0_4px_6px_rgba(4,80,216,0.18)]"
+                          />
+                        ) : (
+                          <Icon aria-hidden className="relative size-[1.4rem] text-brand-deep" strokeWidth={1.8} />
+                        )}
                       </span>
                       <span aria-hidden className="text-[0.8rem] font-semibold tracking-[0.08em] text-sky-300">
                         {String(i + 2).padStart(2, "0")}
